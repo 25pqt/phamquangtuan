@@ -4,128 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single product page</title>
+    <title>FashionHub Product Page</title>
+    <!--link rel="stylesheet" href="styles.css"-->
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="Image" href="./image/">
 
 </head>
 
 <body>
-    <div class="container">
-        <header class="site-header">
-            <div class="logo">
-                <h1><i>FashionHub</i></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Category</a></li>
-                    <li><a href="#">Brand</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">FAQ's</a></li>
-                </ul>
-            </nav>
-            <div class="user-info">
-                <div class="icons">
-                    <div class="icon">
-                        <span class="cart-badge">3</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="icon">
-                        <span class="notification-badge"></span>
-                        <img src="" alt="">
-                    </div>
+    <header class="site-header">
+        <div class="logo">
+            <h1><i>FashionHub</i></h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Brand</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </nav>
+        <div class="user-info">
+            <div class="icons">
+                <div class="icon">
+                    <span class="cart-badge">3</span>
+                    <img src="./image/Group 1.png" alt="Shopping Cart">
                 </div>
-                <div class="profile">
-                    <img src="" alt="" class="avatar">
-                    <div class="user-text">
-                        <span class="greeting">Good Morning!</span>
-                        <span class="user-name">Scarlet Johnson</span>
-                    </div>
+                <div class="icon">
+                    <span class="notification-badge"></span>
+                    <img src="./image/Group 2.png" alt="Notification Bell">
                 </div>
             </div>
-        </header>
-        <main>
-            <div class="product-image">
-                <img src="https://s3-alpha-sig.figma.com/img/064e/2331/cc25a9c017f41ace4894fff950659702?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Np1~D4ngV9O-fQudAz4BzG-BGIzcOxRA8pJGsixzKP7gR1h~vm~Z~9RjdRhykIrXEZoQtwy7FKDClZwrbtXhSkD35mOJkBqlYMdvSgAW1fkLfIaJBJn~cE6Dwo4y5VjnskBS5rDfWbpsKTGU-Er3gfobyYNFeMddqYHmzOvB-uFM~OntGCfKLsiuAkDMGRRokdayieLWXbpZbyApE2d9W0j84SGGJWL5y8QSSKowCS2ZMemLIkbdDNtTILoKdJijIfOwjF0cvQkaTh6hX6VQ4DcIvUpL-3dxKsRKmRzOCwECkY8OGDOZWHgAAcmgDsneYN-I4dQW5Gz02gAQd~pwGQ__"
-                    alt="Product-Image" />
+            <div class="profile">
+                <img src="./image/Rectangle 1.png" alt="User Avatar" class="avatar">
+                <div class="user-text">
+                    <span class="greeting">Good Morning!</span>
+                    <span class="user-name">Scarlet Johnson</span>
+                </div>
             </div>
+        </div>
+    </header>
 
-            <div class="product-details">
-                <nav class="breadcrumb">
-                    <a href="#">Home</a> > <a href="#">Decoration</a> > <a href="#">Furniture</a> <a
-                        href="#">Storage</a> > <a>Sideboard</a>
-                </nav>
-                <h2>Embrace Sideboard</h2>
-                <p class="designer">Teixeira Design Studio</p>
-                <div class="price">
-                    <span class="current-price">$71.56</span>
-                    <span class="original-price">$71.56</span>
+    <main class="product-container">
+        <section class="product-gallery">
+            <div class="main-image">
+                <img src="./image/Rectangle 4.png" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-carousel">
+                <button class="prev">&lt;</button>
+                <div class="thumbnails">
+                    <img src="./image/Rectangle 6.png" alt="Thumbnail 1" class="active">
+                    <img src="./image/Rectangle 5.png" alt="Thumbnail 2">
+                    <img src="./image/Rectangle 7.png" alt="Thumbnail 3">
+                    <img src="./image/Rectangle 8.png" alt="Thumbnail 4">
                 </div>
-                <div class="rating">
-                    <span class="stars">4.8 stars </span>
-                    <span class="reviews">67 Reviews</span>
-                    <span class="recommendation">93% of buyers have recommended this.</span>
-                </div>
-                <div class="color-selection">
-                    <h3>Choose a Color</h3>
-                    <div class="colors">
-                        <button class="color" style="background-color: #ECDECC;"></button>
-                        <button class="color" style="background-color: #BBD278;"></button>
-                        <button class="color" style="background-color: #BBC1F8;"></button>
-                        <button class="color" style="background-color: #FFD3F8;"></button>
-                        <button class="color"
-                            style="background: conic-gradient(from 90deg at 50% 50%, #FFB6B6 0deg, #98C185 360deg);">
-                        </button>
-                    </div>
-                </div>
-                <div class="size-selection">
-                    <h3>Choose a Size</h3>
-                    <div class="sizes">
-                        <label>
-                            <button>
-                                <input type="radio" name="size" value="Small" checked>
-                                <span>Small</span>
-                            </button>
-                        </label>
-                        <label>
-                            <button>
-                                <input type="radio" name="size" value="Small" checked>
-                                <span>Medium</span>
-                            </button>
-                        </label>
-                        <label>
-                            <button>
-                                <input type="radio" name="size" value="Small" checked>
-                                <span>Large</span>
-                            </button>
-                        </label>
-                        <label>
-                            <button>
-                                <input type="radio" name="size" value="Small" checked>
-                                <span>Extra Large</span>
-                            </button>
-                        </label>
-                        <label>
-                            <button>
-                                <input type="radio" name="size" value="Small" checked>
-                                <span>XXL</span>
-                            </button>
-                        </label>
-                    </div>
-                </div>
-                <div class="quantity">
-                    <label for="quantity">Quantity:</label>
-                    <input type="number" id="quantity" name="quantity" value="1" min="1">
-                </div>
-                <button class="add-to-cart">Add To Cart</button>
-                <div class="delivery-info">
-                    <p>Free Delivery</p>
-                    <p> <a href="#">Enter your Postal code for Delivery Availability</a></p>
-                    <p>Return Delivery</p>
-                    <p>Free 30 days Delivery Return. <a href="#">Details</a></p>
+                <button class="next">&gt;</button>
+            </div>
+        </section>
+
+        <section class="product-details">
+            <nav class="breadcrumb">
+                <a href="#">Home</a> &gt;
+                <a href="#">Decoration</a> &gt;
+                <a href="#">Furniture</a> &gt;
+                <a href="#">Storage</a> &gt;
+                <span>Sideboard</span>
+            </nav>
+            <h2>Embrace Sideboard</h2>
+            <p class="designer">Teixeira Design Studio</p>
+            <div class="price">
+                <span class="current-price">$71.56</span>
+                <span class="original-price">$71.56</span>
+            </div>
+            <div class="rating">
+                <span class="stars">4.8*</span>
+                <span class="reviews">67 Reviews</span>
+                <span class="recommendation">93% of buyers have recommended this.</span>
+            </div>
+            <div class="color-selection">
+                <h3>Choose a Color</h3>
+                <div class="colors">
+                    <span class="color" style="background-color: #ECDECC;"></span>
+                    <span class="color" style="background-color: #BBD278;"></span>
+                    <span class="color" style="background-color: #BBC1F8;"></span>
+                    <span class="color" style="background-color: #FFD3F8;"></span>
+                    <button class="color"
+                        style="background: conic-gradient(from 90deg at 50% 50%, #FFB6B6 0deg, #98C185 360deg);">
+                    </button>
                 </div>
             </div>
-        </main>
-    </div>
+            <div class="size-selection">
+                <h3>Choose a Size</h3>
+                <div class="sizes">
+                    <label>
+                        <input type="radio" name="size" value="Small" checked>
+                        <span>Small</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="Medium">
+                        <span>Medium</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="Large">
+                        <span>Large</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="Extra Large">
+                        <span>Extra Large</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="XXL">
+                        <span>XXL</span>
+                    </label>
+                </div>
+            </div>
+            <div class="quantity-selection">
+                <label for="quantity">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-decrease">-</button>
+                    <input type="number" id="quantity" name="quantity" value="5" min="1">
+                    <button class="quantity-increase">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Add To Cart</button>
+            <div class="delivery-info">
+                <p><strong>Free Delivery</strong><br>Enter your Postal code for Delivery Availability</p>
+                <p><strong>Return Delivery</strong><br>Free 30 days Delivery Return. <a href="#">Details</a></p>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

@@ -1,53 +1,43 @@
 body {
-    width: 1440px;
-    height: 1024px;
-    top: -3112px;
-    left: -4490px;
-    gap: 0px;
-    opacity: 0px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 1 1 1px rgba(237, 240, 248, 1);
-}
-
-header {
+.site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-
+    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
 .logo h1 {
-    font-family: Inter;
-    font-size: 32.8px;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 39.7px;
-    text-align: left;
-
-    width: Hug (190px)px;
-    height: Hug (50px)px;
-    gap: 14px;
-    opacity: 0px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #00274d;
+    font-weight: bold;
+    margin: 0;
 }
 
-nav ul {
+.main-nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li a {
+.main-nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #00274d;
+    font-size: 16px;
+}
+
+.main-nav ul li a:hover {
+    color: #007bff;
 }
 
 .user-info {
@@ -123,80 +113,160 @@ nav ul li a {
     color: #333;
 }
 
-main {
+.product-container {
     display: flex;
-    margin-top: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.product-image {
-    width: 587px;
-    height: 691px;
-    top: 130px;
-    left: 80px;
-    gap: 0px;
-    border-radius: 17px 0px 0px 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-
+.product-gallery {
+    width: 50%;
+    text-align: center;
 }
 
-.product-image img {
-    width: 60%;
-    border: 1px solid rgba(237, 240, 248, 1);
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.thumbnail-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.thumbnails img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+.thumbnails img.active {
+    border: 2px solid #0044cc;
+    padding: 2px;
+}
+
+.thumbnail-carousel button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail-carousel button:hover {
+    background-color: #f0f0f0;
 }
 
 .product-details {
     width: 50%;
-    padding-left: 20px;
+    padding-left: 40px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
 }
 
 .breadcrumb a {
     text-decoration: none;
-    color: #666;
+    color: #0044cc;
 }
 
 .breadcrumb a:hover {
     text-decoration: underline;
 }
 
+.product-details h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-details .designer {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
 .price {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .current-price {
     font-size: 24px;
-    color: #333;
-    font-weight: bold;
+    color: #e74c3c;
+    margin-right: 10px;
 }
 
 .original-price {
+    font-size: 18px;
     text-decoration: line-through;
     color: #999;
-    margin-left: 10px;
 }
 
 .rating {
-    margin: 10px 0;
+    margin-bottom: 20px;
 }
 
 .stars {
-    color: #ffcc00;
     font-size: 18px;
+    color: #ffcc00;
+    margin-right: 5px;
 }
 
-.reviews,
-.recommendation {
-    color: #666;
+.reviews {
     font-size: 14px;
-    margin-left: 10px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.recommendation {
+    font-size: 14px;
+    color: #888;
 }
 
 .color-selection,
 .size-selection {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
-.colors {
+.color-selection h3,
+.size-selection h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.colors,
+.sizes {
     display: flex;
     gap: 10px;
 }
@@ -209,52 +279,68 @@ main {
     cursor: pointer;
 }
 
-.sizes button {
+.sizes label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
     padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sizes input[type="radio"] {
+    appearance: none;
     margin-right: 10px;
-    border: 1px solid #ccc;
+}
+
+.sizes input[type="radio"]:checked+span {
+    background-color: #e6f0ff;
+    color: #0044cc;
+    border-color: #0044cc;
+}
+
+.quantity-selection {
+    margin-bottom: 20px;
+}
+
+.quantity-input {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-input button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
     background-color: #fff;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-.sizes button:hover {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.quantity {
-    width: 497px;
-    height: 59px;
-    top: 729px;
-    left: 778px;
-    gap: 0px;
-    opacity: 0px;
-
-}
-
-.quantity input {
+.quantity-input input {
     width: 50px;
-    padding: 5px;
-    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 5px;
 }
 
 .add-to-cart {
     padding: 15px 30px;
-    background-color: #007bff;
+    background-color: #0044cc;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .add-to-cart:hover {
-    background-color: #0056b3;
+    background-color: #0033a0;
 }
 
 .delivery-info {
     margin-top: 20px;
-    color: #666;
+    color: #888;
     font-size: 14px;
 }
 
